@@ -22,7 +22,7 @@ int main(void)
             printf(" ");  
         }
         
-        for (int x = height; x >= height - i; x-- )
+        for (int x = height; x >= height - i; x--)
         {
             printf("#");
             
@@ -30,7 +30,7 @@ int main(void)
         
         printf("  ");
         
-        for (int x = 0; x <= i; x++ )
+        for (int x = 0; x <= i; x++)
         {
             printf("#");
             
