@@ -5,15 +5,11 @@ int main(void)
 {
     // Asking for how many rows
     int height = get_int("Height: ");
-    while (height < 1 )
+    while (height < 1 || height > 8)
     {
         printf("It has to be an integer number between 1 and 8!\n");
         height = get_int("Height: ");
-        while (height > 8)
-        {
-            printf("It has to be an integer number between 1 and 8!\n");
-            height = get_int("Height: ");
-        }
+        
     }
     
     //Buildng the pyramids
