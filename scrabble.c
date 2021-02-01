@@ -39,7 +39,7 @@ int compute_score(string word)
     int sum, length, i;
     sum = 0;
     length = strlen(word);
-    for(i = 0; i < length; i++)
+    for (i = 0; i < length; i++)
     {
         if (isalpha(word[i]) != 0)
         {
