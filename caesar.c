@@ -36,8 +36,12 @@ int main(int argc, string argv[])
     printf("ciphertext: ");
     for (i = 0; i < length; i++)
     {
+        //Searching for letters
+        
         if (isalpha(plain[i]) != 0)
         {
+            //Check case
+            
             if (islower(plain[i]) != 0)
             {
                 cipher = ((plain[i] - 'a' + key) % 26) + 'a';
@@ -49,6 +53,9 @@ int main(int argc, string argv[])
                 printf("%c", cipher);
             }
         }
+        
+        //Printing non-alphabetic characters
+        
         else
         {
             printf("%c", plain[i]);
