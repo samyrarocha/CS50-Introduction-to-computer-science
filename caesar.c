@@ -49,6 +49,10 @@ int main(int argc, string argv[])
                 printf("%c", cipher);
             }
         }
+        else
+        {
+            printf("%c", plain[i]);
+        }
     }
     printf("\n");
     return 0;
