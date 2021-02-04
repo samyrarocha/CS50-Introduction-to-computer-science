@@ -33,6 +33,7 @@ int main(int argc, string argv[])
     length = strlen(plain);
     int i;
     char cipher;
+    printf("ciphertext: ");
     for (i = 0; i < length; i++)
     {
         if (isalpha(plain[i]) != 0)
