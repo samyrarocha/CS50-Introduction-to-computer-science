@@ -28,10 +28,11 @@ int main(void)
     }
     else
     {
-        printf("Grade %g\n", round(index));
+        printf("Grade %g\n", floor(index));
     }
 }
 
+//Computer text, count letters and calculates variable L
 int count_letters(string text)
 {
     int length = strlen(text);
@@ -55,6 +56,7 @@ int count_letters(string text)
     return L;
 }
 
+//Computer text, count sentences and calculates variable S
 int count_sentences(string text)
 {
     int length = strlen(text);
