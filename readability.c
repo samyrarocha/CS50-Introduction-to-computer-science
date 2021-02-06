@@ -4,8 +4,8 @@
 #include <ctype.h>
 #include <math.h>
 
-int count_letters(string text);
-int count_sentences(string text);
+float count_letters(string text);
+float count_sentences(string text);
 
 int main(void)
 {
@@ -34,11 +34,11 @@ int main(void)
 }
 
 //Computer text, count letters and calculates variable L
-int count_letters(string text)
+float count_letters(string text)
 {
     int length = strlen(text);
     float letters = 0;
-    float words = 0;
+    float words = 1;
     float sentences = 0;
     for(int i = 0; i < length; i++)
     {
@@ -58,11 +58,11 @@ int count_letters(string text)
 }
 
 //Computer text, count sentences and calculates variable S
-int count_sentences(string text)
+float count_sentences(string text)
 {
     int length = strlen(text);
     float letters = 0;
-    float words = 0;
+    float words = 1;
     float sentences = 0;
     for(int i = 0; i < length; i++)
     {
