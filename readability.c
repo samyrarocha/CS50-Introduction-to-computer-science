@@ -38,7 +38,7 @@ int count_letters(string text)
 {
     int length = strlen(text);
     float letters = 0;
-    float words = 1;
+    float words = 0;
     float sentences = 0;
     for(int i = 0; i < length; i++)
     {
@@ -62,7 +62,7 @@ int count_sentences(string text)
 {
     int length = strlen(text);
     float letters = 0;
-    float words = 1;
+    float words = 0;
     float sentences = 0;
     for(int i = 0; i < length; i++)
     {
