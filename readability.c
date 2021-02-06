@@ -16,20 +16,20 @@ int main(void)
     float L = count_letters(text);
     float S = count_sentences(text);
     float index = (0.0588 * L) - (0.296 * S) - 15.8;
-    int seila = round(index);
+    index = round(index);
 
     //Print grade
-    if (seila < 1)
+    if (index < 1)
     {
         printf("Before Grade 1\n");
     }
-    else if (seila > 16)
+    else if (index > 16)
     {
         printf("Grade 16+\n");
     }
     else
     {
-        printf("Grade %d\n", seila);
+        printf("Grade %g\n", index);
     }
 }
 
