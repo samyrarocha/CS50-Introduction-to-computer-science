@@ -40,12 +40,12 @@ float count_letters(string text)
     float letters = 0;
     float words = 1;
     float sentences = 0;
-    for(int i = 0; i < length; i++)
+    for (int i = 0; i < length; i++)
     {
         //Counting letters
         if (isalpha(text[i]) != 0)
         {
-          letters++;
+            letters++;
         }
         //Counting words
         if (isspace(text[i]) != 0)
@@ -64,7 +64,7 @@ float count_sentences(string text)
     float letters = 0;
     float words = 1;
     float sentences = 0;
-    for(int i = 0; i < length; i++)
+    for (int i = 0; i < length; i++)
     {
         //Counting words
         if (isspace(text[i]) != 0)
